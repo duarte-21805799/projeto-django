@@ -8,3 +8,7 @@ body > article {
     max-width: 800px;
     margin: auto;
 }
+
+h1 {
+    color:blue;
+}
