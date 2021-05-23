@@ -5,10 +5,9 @@ import datetime
 
 app_name = "website"
 
+
 def home_page_view(request):
-    return render(request, 'website/home.html', {
-        'data': datetime.date.today()
-    })
+    return render(request, 'website/home.html')
 
 
 def base_page_view(request):
@@ -18,12 +17,8 @@ def base_page_view(request):
 
 
 def segundo_page_view(request):
-    return render(request, 'website/segundo.html', {
-        'data': datetime.date.today()
-    })
+    return render(request, 'website/segundo.html')
 
 
 def terceiro_page_view(request):
-    return render(request, 'website/terceiro.html', {
-        'data': datetime.date.today()
-    })
+    return render(request, 'website/terceiro.html')
