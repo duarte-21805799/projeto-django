@@ -25,7 +25,10 @@
                 {% endblock main %}
             </template>
         </main>
-        <aside class="col-sm-6">Deve ter um 'img' aqui + ponto 4.</aside>
+        <aside class="col-sm-6">
+            {% load static %}
+            <img src="{% static 'website/images/image.png' %}">
+        </aside>
     </article>
     <footer>...</footer>
 </body>
