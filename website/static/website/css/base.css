@@ -2,7 +2,7 @@ footer {
    position: fixed;
    bottom: 30px;
    width: 100%;
-   text-align: center;
+   text-align: right;
 }
 body > article {
     max-width: 800px;
