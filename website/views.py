@@ -2,8 +2,10 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.shortcuts import render
+from . import views
 import datetime
 
+app_name = "website"
 
 def home_page_view(request):
     return render(request, 'website/home.html', {
