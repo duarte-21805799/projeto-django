@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'website/css/base.css' %}">
+</head>
+<body>
+    <header class="jumbotron text-center">
+        <h1>Titulo do Website</h1>
+        <p>Isto é uma breve introdução, c/ a mesma largura do titulo</p>
+        <nav>
+            <a href="{% url 'website:home' %}" class="btn btn-info">Home</a>
+            <a href="{% url 'website:primeiro' %}" class="btn btn-info">Primeiro</a>
+            <a href="{% url 'website:segundo' %}" class="btn btn-info">Segundo</a>
+            <a href="{% url 'website:terceiro' %}" class="btn btn-info">Terceiro</a>
+        </nav>
+    </header>
+    <article class="container" class="bootstrap">
+        <main class="col-sm-6">
+            <template>
+                {% block main %}
+                {% endblock main %}
+            </template>
+        </main>
+        <aside class="col-sm-6">Deve ter um 'img' aqui + ponto 4.</aside>
+    </article>
+    <footer>...</footer>
+</body>
+</html>
