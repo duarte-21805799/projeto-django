@@ -1,4 +1,4 @@
-#  hello/urls.py
+#  website/urls.py
 
 from django.shortcuts import render
 from django.urls import path
