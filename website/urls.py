@@ -8,9 +8,9 @@ from . import views
 app_name = "website"
 
 urlpatterns = [
-    path('', views.home_page_view, name='home'),
+    path('home', views.home_page_view, name='home'),
     path('', views.base_page_view, name='base'),
-    path('', views.segundo_page_view, name='segundo'),
-    path('', views.terceiro_page_view, name='terceiro')
+    path('segundo', views.segundo_page_view, name='segundo'),
+    path('terceiro', views.terceiro_page_view, name='terceiro')
 
 ]
