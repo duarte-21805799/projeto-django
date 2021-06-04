@@ -1,0 +1,38 @@
+{% extends 'website/base.html' %}
+
+{% block main %}
+<article>
+    <h1>Layouts</h1>
+
+    <p> A maneira como o conteúdo é apresentado ao utilizador é muito importante. É uma parte fundamental da comunicação visual e do desafio que é desenvolver um website. Um layout bem desenhado torna a 
+        informação rápida de ser consumida e apelativa aos olhos de quem o vê.</p>
+
+    <h2>Abaixo vamos ver os tipos de layouts mais usados:</h2>
+
+    <h2>1. One-Column Layout</h2>
+    <p>É o mais simple dos layouts, organiza informação em apenas uma coluna. O conteúdo é facil de seguir e é o layout perfeito para dispositivos com uma tela reduzida (ex: smartphone).</p>
+    <figure>
+        <img src="{% static 'website/images/one-column-layout.png' %}"<>
+        <figcaption>One-Column Layout. </figcaption>
+        <details>A fotografia foi retirada <a href="https://www.homeandlearn.co.uk/WD/wds6p4.html">daqui</a></details>
+    </figure>
+
+    <h2>2. Two-Column Layout</h2>
+    <p>É dos layouts mais simples no entanto muito útil, organiza informação em duas colunas. É especialmente útil se queremos repetir uma certa coluna em todas as páginas (ex: barra de navegação).</p>
+    <figure>
+        <img src="{% static 'website/images/two-columns-layout.png' %}"<>
+        <figcaption>Two-Column Layout.</figcaption>
+        <details>A fotografia foi retirada <a href="https://vanseodesign.com/css/2-column-layout-code/">daqui</a></details>
+    </figure>
+
+    <h2>3. A grid of cards</h2>
+    <p>É um layout que é apresentado como uma grelha de conteúdos clicáveis. É especialmente útil para websites com muito conteúdo que tenha o mesmo valor de importância (ex: YouTube).</p>
+    <figure>
+        <img src="{% static 'website/images/youtube2.jpg' %}"<>
+        <figcaption>Grid of Carts Layout.</figcaption>
+        <details>A fotografia foi retirada <a href="htttps://youtube.com">daqui</a></details>
+
+    </figure>
+</article>
+{% endblock %}
+
